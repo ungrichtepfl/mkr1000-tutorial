@@ -13,3 +13,7 @@ SoC with Arm Cortex-M0 32-bit SAMD21 processor, with a ECC508 crypto-chip.
 ## SDK
 
 - [CMSIS](https://github.com/ARM-software/CMSIS_6)
+
+## Programmer
+
+- [bossac](https://github.com/shumatech/BOSSA): Compiled from source
