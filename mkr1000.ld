@@ -22,8 +22,9 @@ SECTIONS
     *(.text*)
     *(.rodata*)
     . = ALIGN(4);
-    _etext = .;     /* end of of code */
   } > FLASH
+  
+  _etext = .;     /* end of of code */
 
   .data : AT(_etext) /* VMA in RAM and LMA just after .text */
   {
@@ -32,6 +33,7 @@ SECTIONS
     *(.data*)
     . = ALIGN(4);
     _edata = .;
+    _sidata = LOADADDR(.data); /* the LMA of .data */
   } > RAM
 
   .bss : 

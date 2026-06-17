@@ -1,0 +1,10 @@
+[default_config]
+version = "0.10.1"
+assembler = "gas"
+instruction_set = "arm"
+
+[default_config.opts]
+compiler = "/opt/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc"
+compile_flags_txt = []
+diagnostics = true
+default_diagnostics = true
